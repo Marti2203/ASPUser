@@ -1,0 +1,46 @@
+﻿body {
+    background-image: url('https://unsplash.it/1920/1080/?random');
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* MADE THE BEST CHECK BOX EVAAAAA*/
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #555;
+}
+
+    input[type='checkbox']:checked {
+        background: black;
+    }
+
+
+.checkboxtext {
+    /* Checkbox text */
+    font-size: 110%;
+    display: inline;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+.row {
+    padding: 5px;
+}
