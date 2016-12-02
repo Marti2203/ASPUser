@@ -1,0 +1,27 @@
+C:\Users\fiber\documents\visual studio 2015\Projects\TestApp\CommonFiles\bin\Debug\CommonFiles.dll
+C:\Users\fiber\documents\visual studio 2015\Projects\TestApp\CommonFiles\bin\Debug\CommonFiles.pdb
+C:\Users\fiber\documents\visual studio 2015\Projects\TestApp\CommonFiles\obj\Debug\CommonFiles.csprojResolveAssemblyReference.cache
+C:\Users\fiber\documents\visual studio 2015\Projects\TestApp\CommonFiles\obj\Debug\CommonFiles.Resource.BoxResources.resources
+C:\Users\fiber\documents\visual studio 2015\Projects\TestApp\CommonFiles\obj\Debug\CommonFiles.Resource.ErrorResources.resources
+C:\Users\fiber\documents\visual studio 2015\Projects\TestApp\CommonFiles\obj\Debug\CommonFiles.csproj.GenerateResource.Cache
+C:\Users\fiber\documents\visual studio 2015\Projects\TestApp\CommonFiles\obj\Debug\CommonFiles.dll
+C:\Users\fiber\documents\visual studio 2015\Projects\TestApp\CommonFiles\obj\Debug\CommonFiles.pdb
+C:\Users\fiber\documents\visual studio 2015\Projects\TestApp\CommonFiles\obj\Debug\CommonFiles.Resource.UserResources.resources
+C:\Users\fiber\Desktop\ASPProjects-master\CommonFiles\bin\Debug\CommonFiles.dll
+C:\Users\fiber\Desktop\ASPProjects-master\CommonFiles\bin\Debug\CommonFiles.pdb
+C:\Users\fiber\Desktop\ASPProjects-master\CommonFiles\obj\Debug\CommonFiles.csprojResolveAssemblyReference.cache
+C:\Users\fiber\Desktop\ASPProjects-master\CommonFiles\obj\Debug\CommonFiles.Resource.BoxResources.resources
+C:\Users\fiber\Desktop\ASPProjects-master\CommonFiles\obj\Debug\CommonFiles.Resource.ErrorResources.resources
+C:\Users\fiber\Desktop\ASPProjects-master\CommonFiles\obj\Debug\CommonFiles.Resource.UserResources.resources
+C:\Users\fiber\Desktop\ASPProjects-master\CommonFiles\obj\Debug\CommonFiles.csproj.GenerateResource.Cache
+C:\Users\fiber\Desktop\ASPProjects-master\CommonFiles\obj\Debug\CommonFiles.dll
+C:\Users\fiber\Desktop\ASPProjects-master\CommonFiles\obj\Debug\CommonFiles.pdb
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\bin\Debug\CommonFiles.dll
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\bin\Debug\CommonFiles.pdb
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\CommonFiles.Resource.BoxResources.resources
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\CommonFiles.Resource.ErrorResources.resources
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\CommonFiles.Resource.UserResources.resources
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\CommonFiles.csproj.GenerateResource.Cache
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\CommonFiles.dll
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\CommonFiles.pdb
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\CommonFiles.csprojResolveAssemblyReference.cache
