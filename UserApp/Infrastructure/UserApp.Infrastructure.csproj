@@ -46,16 +46,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CommonFiles\UserApp.CommonFiles.csproj">
-      <Project>{6e095cb5-1375-4a4d-b3e0-f0cf6b293341}</Project>
-      <Name>UserApp.CommonFiles</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DataAccess\UserApp.DataAccess.csproj">
-      <Project>{a2e9834b-d56f-4ae9-ba15-9ed45dbfba98}</Project>
-      <Name>UserApp.DataAccess</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,8 @@
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\bin\Debug\UserApp.CommonFiles.dll
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\bin\Debug\UserApp.CommonFiles.pdb
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\UserApp.CommonFiles.Resource.BoxResources.resources
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\UserApp.CommonFiles.Resource.ErrorResources.resources
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\UserApp.CommonFiles.Resource.UserResources.resources
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\UserApp.CommonFiles.csproj.GenerateResource.Cache
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\UserApp.CommonFiles.dll
+C:\Users\marti\Source\Repos\ASPProjects\CommonFiles\obj\Debug\UserApp.CommonFiles.pdb
