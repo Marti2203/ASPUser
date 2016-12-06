@@ -8,6 +8,7 @@
         <EntityTypeShape EntityType="ATPModel.User" Width="2.875" PointX="0.625" PointY="1.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ATPModel.USER_NEW_NEW" Width="1.5" PointX="4.375" PointY="1.625" />
         <EntityTypeShape EntityType="ATPModel.BOX" Width="1.5" PointX="6.5" PointY="1.5" />
+        <EntityTypeShape EntityType="ATPModel.CV" Width="1.5" PointX="0.75" PointY="5.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

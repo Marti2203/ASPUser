@@ -17,6 +17,7 @@
     <EntitySet Name="User" EntityType="Self.User" />
     <EntitySet Name="USER_NEW_NEW" EntityType="ATPModel.USER_NEW_NEW" />
     <EntitySet Name="BOX" EntityType="ATPModel.BOX" />
+    <EntitySet Name="CV" EntityType="ATPModel.CV" />
   </EntityContainer>
   <EntityType Name="USER_NEW_NEW">
     <Key>
@@ -42,5 +43,20 @@
     <Property Name="LENGTH" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
     <Property Name="WIDTH" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
     <Property Name="HEIGHT" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="CV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Experience" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Qualities" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Education" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Picture" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="PictureName" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
   </EntityType>
 </Schema>

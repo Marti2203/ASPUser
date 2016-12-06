@@ -1,0 +1,35 @@
+﻿@model IEnumerable<TestApp.Models.CVModel>
+@using TestApp.Models
+@using CommonFiles.Resource
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th></th>
+            <th>@CVResources.FirstName</th>
+            <th>@CVResources.LastName</th>
+            <th>@CVResources.Email</th>
+            <th>@CVResources.Address</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (CVModel cv in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(BoxResources.Edit, "Edit", "CV", new { id = cv.ID }, new { @class = "btn btn-primary  glyphicon glyphicon-edit" })</td>
+                <td>@Html.Raw(cv.FirstName)</td>
+                <td>@Html.Raw(cv.LastName)</td>
+                <td>@Html.Raw(cv.Email)</td>
+                <td>@Html.Raw(cv.Address)</td>
+                <td>@Html.ActionLink(" ", "View", "CV",new { id = cv.ID }, new { @class = "btn btn-primary  glyphicon glyphicon-th-list" })</td>
+                <td>@Html.ActionLink(" ", "Delete", "CV", new { id = cv.ID }, new { @class = "btn btn-danger  glyphicon glyphicon-remove" })</td>
+            </tr>
+        }
+    </tbody>
+</table>

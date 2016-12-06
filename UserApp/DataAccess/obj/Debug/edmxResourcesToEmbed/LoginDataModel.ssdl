@@ -12,6 +12,21 @@
     <Property Name="WIDTH" Type="decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="HEIGHT" Type="decimal" Precision="18" Scale="0" Nullable="false" />
   </EntityType>
+  <EntityType Name="CV">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Experience" Type="varchar(max)" Nullable="false" />
+    <Property Name="Qualities" Type="varchar(max)" Nullable="false" />
+    <Property Name="Education" Type="varchar(max)" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Picture" Type="varbinary(max)" Nullable="false" />
+    <Property Name="PictureName" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="ID" />
@@ -40,6 +55,7 @@
   </EntityType>
   <EntityContainer Name="ATPModelStoreContainer">
     <EntitySet Name="BOX" EntityType="Self.BOX" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CV" EntityType="Self.CV" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="USER_NEW_NEW" EntityType="Self.USER_NEW_NEW" Schema="dbo" store:Type="Tables" />
   </EntityContainer>

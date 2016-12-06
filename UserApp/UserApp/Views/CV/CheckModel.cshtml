@@ -1,0 +1,8 @@
+﻿@model TestApp.Models.CVModel
+@{
+    ViewBag.Title = "CheckModel";
+}
+
+<img src="@String.Format(" data:image/png;base64,{0}", Convert.ToBase64String(Model.PictureBytes))" />
+    
+<h2>CheckModel</h2>

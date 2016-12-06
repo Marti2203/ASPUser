@@ -1,0 +1,67 @@
+﻿@model TestApp.Models.CVModel
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+<div style="width: 50%; float:left">
+    <img src="@String.Format(" data:image/png;base64,{0}", Convert.ToBase64String(Model.PictureBytes))" />
+</div>
+
+<div style="width: 50%; float:right">
+    @using (Html.BeginForm("Edit", "CV", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <div class="row">
+            @Html.LabelFor(model => model.FirstName, new { @class = "col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control", @readonly = "readonly" })
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </div>
+        </div>
+        <div class="row">
+            @Html.LabelFor(model => model.LastName, new { @class = "col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(model => model.LastName, new { @class = "form-control", @readonly = "readonly" })
+                @Html.ValidationMessageFor(model => model.LastName)
+            </div>
+        </div>
+        <div class="row">
+            @Html.LabelFor(model => model.Email, new { @class = "col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+        </div>
+        <div class="row">
+            @Html.LabelFor(model => model.Address, new { @class = "col-md-2" })
+            <div class="col-md-4">
+                @Html.TextAreaFor(model => model.Address, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Address)
+            </div>
+        </div>
+        <div class="row">
+            @Html.LabelFor(model => model.Experience, new { @class = "col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(model => model.Experience, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Experience)
+            </div>
+        </div>
+        <div class="row">
+            @Html.LabelFor(model => model.Education, new { @class = "col-md-2" })
+            <div class="col-md-4">
+                @Html.TextAreaFor(model => model.Education, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Education)
+            </div>
+        </div>
+        <div class="row">
+            @Html.LabelFor(model => model.Qualities, new { @class = "col-md-2" })
+            <div class="col-md-4">
+                @Html.TextAreaFor(model => model.Qualities, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Qualities)
+            </div>
+        </div>
+
+        <input class="btn btn-default" type="submit" value="Send" />
+    }
+</div>

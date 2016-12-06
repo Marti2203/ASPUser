@@ -32,7 +32,6 @@ C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\UserApp.pdb
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\Antlr3.Runtime.dll
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\EntityFramework.dll
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\EntityFramework.SqlServer.dll
-C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\Infrastructure.dll
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\JetBrains.Annotations.dll
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\Microsoft.AI.DependencyCollector.dll
@@ -55,9 +54,7 @@ C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\System.Web.WebPages.Razo
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\UserApp.CommonFiles.dll
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\WebActivatorEx.dll
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\WebGrease.dll
-C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\DataAccess.dll
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\UserApp.CommonFiles.pdb
-C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\Infrastructure.pdb
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\EntityFramework.xml
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\EntityFramework.SqlServer.xml
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\JetBrains.Annotations.xml
@@ -77,6 +74,9 @@ C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\Microsoft.AI.DependencyC
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\Microsoft.AI.Web.xml
-C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\DataAccess.pdb
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\obj\Debug\UserApp.dll
 C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\obj\Debug\UserApp.pdb
+C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\UserApp.Infrastructure.dll
+C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\UserApp.DataAccess.dll
+C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\UserApp.Infrastructure.pdb
+C:\Users\marti\Source\Repos\ASPUser\UserApp\UserApp\bin\UserApp.DataAccess.pdb

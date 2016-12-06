@@ -162,11 +162,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CVController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CVModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Models\Utilities\Gender.cs" />
     <Compile Include="Models\Utilities\SelectListItemFactory.cs" />
@@ -216,6 +218,11 @@
     <Content Include="Views\User\Enter.cshtml" />
     <Content Include="Views\User\List.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\CV\CheckModel.cshtml" />
+    <Content Include="Views\CV\Create.cshtml" />
+    <Content Include="Views\CV\Edit.cshtml" />
+    <Content Include="Views\CV\List.cshtml" />
+    <Content Include="Views\CV\View.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

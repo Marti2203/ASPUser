@@ -28,5 +28,6 @@ namespace UserApp.DataAccess
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<USER_NEW_NEW> USER_NEW_NEW { get; set; }
         public virtual DbSet<BOX> BOX { get; set; }
+        public virtual DbSet<CV> CV { get; set; }
     }
 }
