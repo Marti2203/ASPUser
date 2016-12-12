@@ -1,0 +1,34 @@
+﻿@model IList<UserApp.Models.UserModel>
+@using UserApp.CommonFiles.Resource;
+@using System.Reflection;
+@using UserApp.Models;
+@{
+    ViewBag.Title = "Users";
+}
+
+<h2>@UserResources.ListUsers</h2>
+<table class="table table-bordered table-striped table-hover">
+    <thead>
+        <tr>
+            <th></th>
+            <th>@UserResources.Username</th>
+            <th>@UserResources.Gender</th>
+            <th>@UserResources.Email</th>
+            <th>@UserResources.About</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (UserModel user in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(UserResources.Edit, "Edit", "User", new { id = user.ID }, new { @class = "btn btn-primary  glyphicon glyphicon-edit" })</td>
+                <td>@Html.Raw(user.Username)</td>
+                <td>@Html.Raw(user.Gender)</td>
+                <td>@Html.Raw(user.Email)</td>
+                <td>@Html.Raw(user.About)</td>
+                <td>@Html.ActionLink(" ", "Delete", "User", new { id = user.ID }, new { @class = "btn btn-danger  glyphicon glyphicon-remove" })</td>
+            </tr>
+        }
+    </tbody>
+</table>
