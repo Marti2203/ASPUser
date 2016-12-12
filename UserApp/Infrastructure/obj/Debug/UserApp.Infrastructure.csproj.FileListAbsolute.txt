@@ -1,9 +1,0 @@
-C:\Users\marti\Source\Repos\ASPUser\UserApp\Infrastructure\obj\Debug\UserApp.Infrastructure.csprojResolveAssemblyReference.cache
-C:\Users\marti\Source\Repos\ASPUser\UserApp\Infrastructure\bin\Debug\UserApp.Infrastructure.dll
-C:\Users\marti\Source\Repos\ASPUser\UserApp\Infrastructure\bin\Debug\UserApp.Infrastructure.pdb
-C:\Users\marti\Source\Repos\ASPUser\UserApp\Infrastructure\bin\Debug\UserApp.CommonFiles.dll
-C:\Users\marti\Source\Repos\ASPUser\UserApp\Infrastructure\bin\Debug\UserApp.DataAccess.dll
-C:\Users\marti\Source\Repos\ASPUser\UserApp\Infrastructure\bin\Debug\UserApp.CommonFiles.pdb
-C:\Users\marti\Source\Repos\ASPUser\UserApp\Infrastructure\bin\Debug\UserApp.DataAccess.pdb
-C:\Users\marti\Source\Repos\ASPUser\UserApp\Infrastructure\obj\Debug\UserApp.Infrastructure.dll
-C:\Users\marti\Source\Repos\ASPUser\UserApp\Infrastructure\obj\Debug\UserApp.Infrastructure.pdb
