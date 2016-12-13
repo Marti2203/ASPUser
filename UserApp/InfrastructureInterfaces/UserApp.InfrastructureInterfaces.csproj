@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AFA89F13-AA6D-4FF6-AC62-EA6D72E11FF5}</ProjectGuid>
+    <ProjectGuid>{E680BB55-9916-46AF-99B7-D7DB45E93033}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UserApp.Infrastructure</RootNamespace>
-    <AssemblyName>UserApp.Infrastructure</AssemblyName>
+    <RootNamespace>UserApp.InfrastructureInterfaces</RootNamespace>
+    <AssemblyName>UserApp.InfrastructureInterfaces</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,9 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-      <HintPath>..\..\..\ASPProjects\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,30 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CVService.cs" />
+    <Compile Include="ICVService.cs" />
+    <Compile Include="IDefaultService.cs" />
+    <Compile Include="IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommonFiles\UserApp.CommonFiles.csproj">
       <Project>{6e095cb5-1375-4a4d-b3e0-f0cf6b293341}</Project>
       <Name>UserApp.CommonFiles</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataAccess\UserApp.DataAccess.csproj">
-      <Project>{a2e9834b-d56f-4ae9-ba15-9ed45dbfba98}</Project>
-      <Name>UserApp.DataAccess</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\InfrastructureInterfaces\UserApp.InfrastructureInterfaces.csproj">
-      <Project>{e680bb55-9916-46af-99b7-d7db45e93033}</Project>
-      <Name>UserApp.InfrastructureInterfaces</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service Capabilities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

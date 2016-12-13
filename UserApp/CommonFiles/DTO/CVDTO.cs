@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 using System.Web;
 namespace UserApp.CommonFiles.DTO
 {
-    public class CVDTO
+    public class CVDTO : DTO
     {
-        public int ID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }

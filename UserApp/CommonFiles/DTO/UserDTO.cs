@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 namespace UserApp.CommonFiles.DTO
 {
     //DataTransferObject- Intermediary object between Model and Database Object
-    public class UserDTO
+    public class UserDTO :DTO
     {
-        public int ID { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }

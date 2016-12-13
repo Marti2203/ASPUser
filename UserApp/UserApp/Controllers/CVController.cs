@@ -4,17 +4,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using UserApp.Infrastructure;
 using UserApp.Models;
 using reCaptcha;
 using System.Configuration;
 using System.Diagnostics;
 using System.Web.Helpers;
+using UserApp.InfrastructureInterfaces;
 
 namespace UserApp.Controllers
 {
     public class CVController : Controller
     {
+        private readonly ICVService _service;
+
+        public CVController(ICVService service)
+        {
+            _service = service;
+        }
+
         // GET: CV
         public ActionResult Index()
         {
@@ -24,7 +31,7 @@ namespace UserApp.Controllers
         [HttpGet]
         public ActionResult List()
         {
-            IEnumerable<CVModel> dtos = new CVService().GetAll().Select(element => Convert(element));
+            IEnumerable<CVModel> dtos = _service.GetAll().Select(element => Convert(element));
             return View(dtos);
         }
 
@@ -37,7 +44,7 @@ namespace UserApp.Controllers
 
             if (ModelState.IsValid)
             {
-                new CVService().Insert(Convert(model));
+                _service.Insert(Convert(model));
                 return View(model);
             }
             else
@@ -60,7 +67,7 @@ namespace UserApp.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            return View(Convert(new CVService().Get(id)));
+            return View(Convert(_service.Get(id)));
         }
 
         [HttpPost]
@@ -71,18 +78,17 @@ namespace UserApp.Controllers
             {
                 if (model.Picture != null)
                 {
-                    new CVService().Edit(Convert(model));
+                    _service.Edit(Convert(model));
                 }
                 else
                 {
-                    CVService service = new CVService();
-                    CVDTO dto= service.Get(model.ID);
+                    CVDTO dto= _service.Get(model.ID);
                     dto.Address = model.Address;
                     dto.Education = model.Education;
                     dto.Email = model.Email;
                     dto.Experience = model.Experience;
                     dto.Qualities = model.Qualities;
-                    service.Edit(dto);
+                    _service.Edit(dto);
                 }
                 return RedirectToAction("List");
             }
@@ -94,11 +100,11 @@ namespace UserApp.Controllers
 
         public ActionResult Delete(int id)
         {
-            new CVService().Delete(id);
+            _service.Delete(id);
             return RedirectToAction("List");
         }
 
-        public ActionResult View(int id)=>View(Convert(new CVService().Get(id)));
+        public ActionResult View(int id)=>View(Convert(_service.Get(id)));
         
 
         private CVModel Convert(CVDTO dto) => new CVModel

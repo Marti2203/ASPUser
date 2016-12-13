@@ -5,10 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UserApp.InfrastructureInterfaces;
 
 namespace UserApp.Infrastructure
 {
-    public class CVService
+    public class CVService : ICVService
     {
         public void Insert(CVDTO dto)
         {

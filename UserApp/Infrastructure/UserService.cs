@@ -7,11 +7,12 @@ using System.Text;
 using System.Threading.Tasks;
 using UserApp.CommonFiles.DTO;
 using System.Reflection;
+using UserApp.InfrastructureInterfaces;
 
 namespace UserApp.Infrastructure
 {
     //Service for communication between the Database and the Controller
-    public class UserService
+    public class UserService:IUserService
     {
 
         //Insert a user to the database

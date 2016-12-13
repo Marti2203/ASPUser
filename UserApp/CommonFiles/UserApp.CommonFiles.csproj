@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UserApp.CommonFiles</RootNamespace>
     <AssemblyName>UserApp.CommonFiles</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTO\CVDTO.cs" />
+    <Compile Include="DTO\DTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource\CVResources.Designer.cs">
