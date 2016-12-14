@@ -10,6 +10,9 @@ using System.Configuration;
 using System.Diagnostics;
 using System.Web.Helpers;
 using UserApp.InfrastructureInterfaces;
+using System.IO;
+using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace UserApp.Controllers
 {
@@ -104,8 +107,33 @@ namespace UserApp.Controllers
             return RedirectToAction("List");
         }
 
-        public ActionResult View(int id)=>View(Convert(_service.Get(id)));
-        
+        public ActionResult View(int id)
+        {
+            CVModel model = Convert(_service.Get(id));
+
+            Image img;
+            using (MemoryStream stream = new MemoryStream(model.PictureBytes))
+            { img = new Bitmap(stream); }
+
+            Image pic = Resize(img, 400, 400);
+            using (MemoryStream ms = new MemoryStream())
+            {
+                pic.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                model.PictureBytes = ms.GetBuffer();
+            }
+
+            return View(model);
+        }
+
+        private Image Resize(Image img, int resizedW, int resizedH)
+        {
+            Bitmap bmp = new Bitmap(resizedW, resizedH);
+            Graphics graphic = Graphics.FromImage((Image)bmp);
+            graphic.InterpolationMode = InterpolationMode.HighQualityBicubic;
+            graphic.DrawImage(img, 0, 0, resizedW, resizedH);
+            graphic.Dispose();
+            return bmp;
+        }
 
         private CVModel Convert(CVDTO dto) => new CVModel
         {
