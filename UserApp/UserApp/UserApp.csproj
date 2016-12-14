@@ -278,6 +278,9 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -310,10 +313,14 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>echo F|xcopy "$(SolutionDir)\Infrastructure\bin\Debug\UserApp.Infrastructure.dll" "UserApp.Infrastructure.dll" /Y
+    <PostBuildEvent>echo F|xcopy "$(SolutionDir)Infrastructure\bin\Debug\UserApp.Infrastructure.dll" 
+"UserApp.Infrastructure.dll" /Y
+
 echo F|xcopy "$(SolutionDir)DataAccess\bin\Debug\UserApp.DataAccess.dll" "UserApp.DataAccess.dll" /Y
-echo F|xcopy "$(SolutionDir)\Infrastructure\bin\Debug\UserApp.Infrastructure.pdb" "UserApp.Infrastructure.pdb" /Y
-echo F|xcopy "$(SolutionDir)\DataAccess\bin\Debug\UserApp.DataAccess.pdb" "UserApp.DataAccess.pdb" /Y</PostBuildEvent>
+
+echo F|xcopy "$(SolutionDir)Infrastructure\bin\Debug\UserApp.Infrastructure.pdb" "UserApp.Infrastructure.pdb" /Y
+
+echo F|xcopy "$(SolutionDir)DataAccess\bin\Debug\UserApp.DataAccess.pdb" "UserApp.DataAccess.pdb" /Y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
