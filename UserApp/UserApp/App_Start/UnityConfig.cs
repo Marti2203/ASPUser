@@ -1,8 +1,6 @@
 using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
-using System.Reflection;
-using UserApp.InfrastructureInterfaces;
 
 namespace UserApp.App_Start
 {
@@ -39,11 +37,6 @@ namespace UserApp.App_Start
 
             // TODO: Register your types here
             // container.RegisterType<IProductRepository, ProductRepository>();
-
-            Assembly infrastructureImplementations = Assembly.Load("UserApp.Infrastructure");
-            container.RegisterType(typeof(IUserService), infrastructureImplementations.GetType("UserApp.Infrastructure.UserService", true));
-            container.RegisterType(typeof(ICVService), infrastructureImplementations.GetType("UserApp.Infrastructure.CVService", true));
-
         }
     }
 }
